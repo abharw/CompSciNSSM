@@ -1,0 +1,21 @@
+
+Call:
+lm(formula = airquality$Ozone ~ airquality$Wind + airquality$Temp)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-41.251 -13.695  -2.856  11.390 100.367 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     -71.0332    23.5780  -3.013   0.0032 ** 
+airquality$Wind  -3.0555     0.6633  -4.607 1.08e-05 ***
+airquality$Temp   1.8402     0.2500   7.362 3.15e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21.85 on 113 degrees of freedom
+  (37 observations deleted due to missingness)
+Multiple R-squared:  0.5687,	Adjusted R-squared:  0.5611 
+F-statistic:  74.5 on 2 and 113 DF,  p-value: < 2.2e-16
+

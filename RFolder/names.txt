@@ -1,0 +1,1 @@
+[1] "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"    

@@ -1,0 +1,741 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     29589,        733]
+NotebookOptionsPosition[     26139,        666]
+NotebookOutlinePosition[     26694,        686]
+CellTagsIndexPosition[     26651,        683]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Lab Report Sheet:  Calculating Bond Densities", "Subtitle",
+ CellChangeTimes->{{3.498552424613203*^9, 3.4985524450223923`*^9}},
+ TextAlignment->Left,
+ TextJustification->0.,ExpressionUUID->"b59d1ae4-6807-45f6-aeac-5783f3188245"],
+
+Cell["Arav Bhardwaj", "Subsubtitle",
+ CellChangeTimes->{{3.4985531949130774`*^9, 3.498553195294013*^9}, {
+  3.8744102780585904`*^9, 
+  3.874410281195735*^9}},ExpressionUUID->"11cfde07-3eff-415d-a92e-\
+cc663ae82d44"],
+
+Cell[CellGroupData[{
+
+Cell["Data Collection: Determination of Maximum Electron Density", "Section",
+ CellChangeTimes->{{3.498552465682485*^9, 
+  3.498552491008203*^9}},ExpressionUUID->"831e9df3-abd3-426f-92e7-\
+b235b9c86616"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"electrondensitydataCC", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\"\<Compound\>\"", 
+       "\"\<Max \!\(\*SuperscriptBox[\(e\), \(-\)]\) \ndensity \n\
+(\!\(\*SuperscriptBox[\(e\), \(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \
+\(3\)]\))\>\"", "\"\<Bond\nLength (\[CapitalARing])\>\""},
+      {"\"\<C-C\>\"", "0.237", "1.543"},
+      {"\"\<C=C\>\"", "0.361", "1.315"},
+      {"\"\<C\[Congruent]C\>\"", "0.410", "1.188"}
+     },
+     GridBoxDividers->{
+      "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+       "RowsIndexed" -> {}}], "\[NoBreak]", ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"electrondensitydataCN", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\"\<Compound\>\"", 
+       "\"\<Max \!\(\*SuperscriptBox[\(e\), \(-\)]\) \ndensity \n\
+(\!\(\*SuperscriptBox[\(e\), \(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \
+\(3\)]\))\>\"", "\"\<Bond\nLength (\[CapitalARing])\>\""},
+      {"\"\<C-N\>\"", "0.264", "1.472"},
+      {"\"\<C=N\>\"", "0.401", "1.256"},
+      {"\"\<C\[Congruent]N\>\"", "0.499", "1.137"}
+     },
+     GridBoxDividers->{
+      "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+       "RowsIndexed" -> {}}], "\[NoBreak]", ")"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"electrondensitydataNN", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"\"\<Compound\>\"", 
+       "\"\<Max \!\(\*SuperscriptBox[\(e\), \(-\)]\) \ndensity \n\
+(\!\(\*SuperscriptBox[\(e\), \(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \
+\(3\)]\))\>\"", "\"\<Bond\nLength (\[CapitalARing])\>\""},
+      {"\"\<N-N\>\"", "0.299", "1.450"},
+      {"\"\<N=N\>\"", "0.500", "1.234"},
+      {"\"\<N\[Congruent]N\>\"", "0.696", "1.083"}
+     },
+     GridBoxDividers->{
+      "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+       "RowsIndexed" -> {}}], "\[NoBreak]", ")"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.498552493767639*^9, 3.498552595888414*^9}, 
+   3.498552627893425*^9, {3.498552811959071*^9, 3.498552886138474*^9}, {
+   3.498552964133884*^9, 3.4985529660131702`*^9}, {3.4985531211243563`*^9, 
+   3.498553141708377*^9}, {3.498553601216156*^9, 3.498553616960827*^9}, {
+   3.52818961228229*^9, 3.5281896173305902`*^9}, {3.528191232497468*^9, 
+   3.528191246024235*^9}, {3.528191389793874*^9, 3.528191395171996*^9}, {
+   3.528191713107218*^9, 3.528191750206897*^9}, {3.528191793470475*^9, 
+   3.528191892965015*^9}, {3.528192282051043*^9, 3.5281923435573378`*^9}, {
+   3.528192404678245*^9, 3.5281924141744137`*^9}, {3.5281928464654427`*^9, 
+   3.528192883476592*^9}, {3.874412015124222*^9, 3.8744120301056566`*^9}, {
+   3.87441232230621*^9, 3.874412334591633*^9}, {3.8744125444644957`*^9, 
+   3.874412559644103*^9}, 3.874412758964443*^9, {3.8744127978783064`*^9, 
+   3.8744127984337797`*^9}, {3.8744131773590155`*^9, 
+   3.8744131841055355`*^9}, {3.8744132934419193`*^9, 
+   3.8744133050010996`*^9}, {3.874413409750763*^9, 3.874413418924301*^9}, {
+   3.8744136764854794`*^9, 3.874413692229531*^9}, {3.8744138533303165`*^9, 
+   3.8744138635385475`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"7ab582ed-3ea3-46af-bca0-c9d2610eb017"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Data Analysis: Determination of Maximum Electron Density", "Section",
+ CellChangeTimes->{{3.498552465682485*^9, 3.498552491008203*^9}, {
+  3.498552730125086*^9, 
+  3.498552731514638*^9}},ExpressionUUID->"f31132dd-9519-43cd-b2d8-\
+55d94623118f"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+In the step below, I delete Row 1 (the header row), because I don't need to \
+do any math with the header:\
+\>", "Item",
+ CellChangeTimes->{{3.498553216704176*^9, 
+  3.498553242587162*^9}},ExpressionUUID->"0f169297-e778-492c-99c1-\
+8d51cf31c783"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"electrondensitydataCC", " ", "=", " ", 
+   RowBox[{"Delete", "[", 
+    RowBox[{"electrondensitydataCC", ",", "1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"electrondensitydataCN", " ", "=", " ", 
+   RowBox[{"Delete", "[", 
+    RowBox[{"electrondensitydataCN", ",", "1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"electrondensitydataNN", " ", "=", " ", 
+   RowBox[{"Delete", "[", 
+    RowBox[{"electrondensitydataNN", ",", "1"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.4985527350736094`*^9, 3.4985527512987022`*^9}, {
+  3.5281918987467117`*^9, 3.528191901260193*^9}, {3.5281919714835873`*^9, 
+  3.528191992626114*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"22b975f7-cd0a-4aaa-8d66-b4992e7a4400"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+In the step below, I put the data in column 1 into a variable called \
+\"compound\", the data in column 2 into a variable called \"density\", and \
+the data in column 3 into a variable called \"length\":\
+\>", "Item",
+ CellChangeTimes->{{3.498553216704176*^9, 
+  3.4985533024258423`*^9}},ExpressionUUID->"4a409877-77c6-4899-bd4d-\
+1a6fb412b4bf"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"compoundCC", ",", " ", "densityCC", ",", " ", "lengthCC"}], 
+    "}"}], " ", "=", " ", 
+   RowBox[{"Transpose", "[", "electrondensitydataCC", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"compoundCN", ",", " ", "densityCN", ",", " ", "lengthCN"}], 
+    "}"}], " ", "=", " ", 
+   RowBox[{"Transpose", "[", "electrondensitydataCN", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"compoundNN", ",", " ", "densityNN", ",", " ", "lengthNN"}], 
+    "}"}], " ", "=", " ", 
+   RowBox[{"Transpose", "[", "electrondensitydataNN", "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.498552763500985*^9, 3.498552787478272*^9}, {
+  3.528191907124251*^9, 3.528191907276251*^9}, {3.528191944306364*^9, 
+  3.528191947235358*^9}, {3.5281920029121113`*^9, 3.528192032401058*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"517adbc6-24cb-4b83-b7d1-292a3aa8c600"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+In the step below, I join density and length into one dataset called \
+\"datafit\".  Density is x, and length is y:\
+\>", "Item",
+ CellChangeTimes->{{3.498553216704176*^9, 3.498553242587162*^9}, {
+  3.498553313935034*^9, 
+  3.498553333330821*^9}},ExpressionUUID->"588b3788-3e14-47f1-ad11-\
+84eb8a2f2516"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"datafitCC", "=", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{"densityCC", ",", "lengthCC"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"datafitCN", "=", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{"densityCN", ",", "lengthCN"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"datafitNN", "=", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{"densityNN", ",", "lengthNN"}], "}"}], "]"}]}], ";"}]}], "Input",\
+
+ CellChangeTimes->{{3.498552905499414*^9, 3.498552930291767*^9}, {
+  3.4985529827774267`*^9, 3.498552992135784*^9}, {3.52819195004879*^9, 
+  3.528191960281117*^9}, {3.5281920396874866`*^9, 3.528192063800672*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"eab32a20-8eb6-4e73-bd6c-57ed434c2989"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Just for fun, I plot the datafit data to see what the line looks like:\
+\>", "Item",
+ CellChangeTimes->{{3.498553216704176*^9, 3.498553242587162*^9}, {
+  3.498553343783626*^9, 
+  3.498553358123805*^9}},ExpressionUUID->"5be4c144-b9b3-413c-b90a-\
+6cd9ab25f6f3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ccplot", " ", "=", " ", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{"datafitCC", ",", " ", 
+    RowBox[{
+    "PlotLabel", " ", "\[Rule]", " ", 
+     "\"\<Graph of Electron Density vs. Bond Length for CC Compounds\>\""}], 
+    ",", " ", 
+    RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Electron Density (\!\(\*SuperscriptBox[\(e\), \
+\(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \(3\)]\))\>\"", ",", " ", 
+       "\"\<Bond Length (\[Angstrom])\>\""}], "}"}]}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"cnplot", " ", "=", " ", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{"datafitCN", ",", 
+    RowBox[{
+    "PlotLabel", " ", "\[Rule]", " ", 
+     "\"\<Graph of Electron Density vs. Bond Length for CN Compounds\>\""}], 
+    ",", " ", 
+    RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Electron Density (\!\(\*SuperscriptBox[\(e\), \
+\(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \(3\)]\))\>\"", ",", " ", 
+       "\"\<Bond Length (\[Angstrom])\>\""}], "}"}]}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"nnplot", " ", "=", " ", 
+  RowBox[{"ListLinePlot", "[", 
+   RowBox[{"datafitNN", ",", 
+    RowBox[{
+    "PlotLabel", " ", "\[Rule]", " ", 
+     "\"\<Graph of Electron Density vs. Bond Length for NN Compounds\>\""}], 
+    ",", " ", 
+    RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Electron Density (\!\(\*SuperscriptBox[\(e\), \
+\(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \(3\)]\))\>\"", ",", " ", 
+       "\"\<Bond Length (\[Angstrom])\>\""}], "}"}]}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.498553166883909*^9, 3.4985531720855303`*^9}, {
+  3.528192066471167*^9, 3.528192096390545*^9}, {3.528192455849481*^9, 
+  3.5281927123645363`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"60de723b-b390-4c87-bac2-77bdc9b8250f"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      NCache[
+       Rational[7, 360], 0.019444444444444445`]], AbsoluteThickness[1.6], 
+     StyleBox[LineBox[{{0.237, 1.543}, {0.361, 1.315}, {0.41, 1.188}}],
+      FontFamily->"Arial"]}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+     "\"Electron Density (\\!\\(\\*SuperscriptBox[\\(e\\), \\(-\\)]\\)/\\!\\(\
+\\*SuperscriptBox[\\(bohr\\), \\(3\\)]\\))\"", HoldForm], TraditionalForm], 
+    FormBox[
+     TagBox["\"Bond Length (\[Angstrom])\"", HoldForm], TraditionalForm]},
+  AxesOrigin->{0.2333958333333341, 1.1682777777777806`},
+  BaseStyle->{FontFamily -> "Arial"},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotLabel->FormBox[
+   "\"Graph of Electron Density vs. Bond Length for CC Compounds\"", 
+    TraditionalForm],
+  PlotRange->{{0.2333958333333341, 0.41}, {1.1682777777777806`, 1.543}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.5281926803960247`*^9, {3.5281928904993467`*^9, 3.52819290796972*^9}, 
+   3.8744138687075987`*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"c1d059b5-47ed-4050-8444-f4e9cb4f31b9"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      NCache[
+       Rational[7, 360], 0.019444444444444445`]], AbsoluteThickness[1.6], 
+     StyleBox[LineBox[{{0.264, 1.472}, {0.401, 1.256}, {0.499, 1.137}}],
+      FontFamily->"Arial"]}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+     "\"Electron Density (\\!\\(\\*SuperscriptBox[\\(e\\), \\(-\\)]\\)/\\!\\(\
+\\*SuperscriptBox[\\(bohr\\), \\(3\\)]\\))\"", HoldForm], TraditionalForm], 
+    FormBox[
+     TagBox["\"Bond Length (\[Angstrom])\"", HoldForm], TraditionalForm]},
+  AxesOrigin->{0.25910416666666747`, 1.1183888888888918`},
+  BaseStyle->{FontFamily -> "Arial"},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotLabel->FormBox[
+   "\"Graph of Electron Density vs. Bond Length for CN Compounds\"", 
+    TraditionalForm],
+  PlotRange->{{0.25910416666666747`, 0.499}, {1.1183888888888918`, 1.472}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.5281926803960247`*^9, {3.5281928904993467`*^9, 3.52819290796972*^9}, 
+   3.8744138687618074`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"c6005ea8-dc03-4963-8e56-8c85302f61e8"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, {}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      NCache[
+       Rational[7, 360], 0.019444444444444445`]], AbsoluteThickness[1.6], 
+     StyleBox[LineBox[{{0.299, 1.45}, {0.5, 1.234}, {0.696, 1.083}}],
+      FontFamily->"Arial"]}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox[
+     TagBox[
+     "\"Electron Density (\\!\\(\\*SuperscriptBox[\\(e\\), \\(-\\)]\\)/\\!\\(\
+\\*SuperscriptBox[\\(bohr\\), \\(3\\)]\\))\"", HoldForm], TraditionalForm], 
+    FormBox[
+     TagBox["\"Bond Length (\[Angstrom])\"", HoldForm], TraditionalForm]},
+  AxesOrigin->{0.2907291666666676, 1.0626111111111138`},
+  BaseStyle->{FontFamily -> "Arial"},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        Identity[
+         Part[#, 1]], 
+        Identity[
+         Part[#, 2]]}& )}},
+  PlotLabel->FormBox[
+   "\"Graph of Electron Density vs. Bond Length for NN Compounds\"", 
+    TraditionalForm],
+  PlotRange->{{0.2907291666666676, 0.696}, {1.0626111111111138`, 1.45}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.5281926803960247`*^9, {3.5281928904993467`*^9, 3.52819290796972*^9}, 
+   3.87441386881882*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"f1d8a00b-c6ab-45bf-af45-b34894397352"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+In the step below, I create a \"y=mx+b\" plot using LinearModelFit.  The two \
+x's say to give me a y=mx+b fit.  The Normal command displays the results in \
+a relatively familiar form (although it's y = b +mx form!):\
+\>", "Item",
+ CellChangeTimes->{{3.498553216704176*^9, 3.498553242587162*^9}, {
+  3.498553367774878*^9, 
+  3.4985534269588757`*^9}},ExpressionUUID->"253b59c4-922a-4983-bb2a-\
+01e6df7ffc6f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"fitCC", "=", 
+  RowBox[{"LinearModelFit", "[", 
+   RowBox[{"datafitCC", ",", "x", ",", "x"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Normal", "[", "fitCC", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"fitCN", "=", 
+  RowBox[{"LinearModelFit", "[", 
+   RowBox[{"datafitCN", ",", "x", ",", "x"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Normal", "[", "fitCN", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"fitNN", "=", 
+  RowBox[{"LinearModelFit", "[", 
+   RowBox[{"datafitNN", ",", "x", ",", "x"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Normal", "[", "fitCC", "]"}]}], "Input",
+ CellChangeTimes->{{3.498553003324971*^9, 3.4985530162475*^9}, {
+  3.498553089085971*^9, 3.498553093562706*^9}, {3.5281921057733307`*^9, 
+  3.528192120196076*^9}, {3.528192230706271*^9, 3.5281922454104223`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"6360b4c5-4e60-4832-85c9-131cb03fe6f5"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{"2.024174150002097`", "\[VeryThinSpace]", "-", 
+       RowBox[{"2.0104389384983055`", " ", "x"}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {
+     2.024174150002097, -2.0104389384983055`}, {{$CellContext`x}, {
+      1, $CellContext`x}}, {0, 0}}, {{1., 1., 1.}}, {{0.237, 1.543}, {0.361, 
+    1.315}, {0.41, 1.188}}, {{1., 0.237}, {1., 0.361}, {1., 0.41}}, 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output",
+ CellChangeTimes->{
+  3.498553019735711*^9, 3.4985531473292713`*^9, 3.49855362564036*^9, 
+   3.5281912585655947`*^9, 3.528191754495555*^9, 3.528191924444056*^9, 
+   3.528192347257972*^9, 3.528192416770191*^9, 3.528192503181123*^9, 
+   3.528192542516197*^9, 3.528192620780167*^9, 3.5281926804465437`*^9, {
+   3.528192890553093*^9, 3.528192908023637*^9}, 3.8744138690939317`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"fe01a717-c0b9-4013-9bf7-d08fa45466e3"],
+
+Cell[BoxData[
+ RowBox[{"2.024174150002097`", "\[VeryThinSpace]", "-", 
+  RowBox[{"2.0104389384983055`", " ", "x"}]}]], "Output",
+ CellChangeTimes->{
+  3.498553019735711*^9, 3.4985531473292713`*^9, 3.49855362564036*^9, 
+   3.5281912585655947`*^9, 3.528191754495555*^9, 3.528191924444056*^9, 
+   3.528192347257972*^9, 3.528192416770191*^9, 3.528192503181123*^9, 
+   3.528192542516197*^9, 3.528192620780167*^9, 3.5281926804465437`*^9, {
+   3.528192890553093*^9, 3.528192908023637*^9}, 3.874413869102934*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"50c0ad17-04f1-44c7-beb8-79d892d7640f"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{"1.8451869901193882`", "\[VeryThinSpace]", "-", 
+       RowBox[{"1.435189837077461`", " ", "x"}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {
+     1.8451869901193882`, -1.435189837077461}, {{$CellContext`x}, {
+      1, $CellContext`x}}, {0, 0}}, {{1., 1., 1.}}, {{0.264, 1.472}, {0.401, 
+    1.256}, {0.499, 1.137}}, {{1., 0.264}, {1., 0.401}, {1., 0.499}}, 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output",
+ CellChangeTimes->{
+  3.498553019735711*^9, 3.4985531473292713`*^9, 3.49855362564036*^9, 
+   3.5281912585655947`*^9, 3.528191754495555*^9, 3.528191924444056*^9, 
+   3.528192347257972*^9, 3.528192416770191*^9, 3.528192503181123*^9, 
+   3.528192542516197*^9, 3.528192620780167*^9, 3.5281926804465437`*^9, {
+   3.528192890553093*^9, 3.528192908023637*^9}, 3.8744138691109347`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"13300985-5039-412f-8763-b00a75796fcf"],
+
+Cell[BoxData[
+ RowBox[{"1.8451869901193882`", "\[VeryThinSpace]", "-", 
+  RowBox[{"1.435189837077461`", " ", "x"}]}]], "Output",
+ CellChangeTimes->{
+  3.498553019735711*^9, 3.4985531473292713`*^9, 3.49855362564036*^9, 
+   3.5281912585655947`*^9, 3.528191754495555*^9, 3.528191924444056*^9, 
+   3.528192347257972*^9, 3.528192416770191*^9, 3.528192503181123*^9, 
+   3.528192542516197*^9, 3.528192620780167*^9, 3.5281926804465437`*^9, {
+   3.528192890553093*^9, 3.528192908023637*^9}, 3.874413869117185*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"0033c8ce-044c-4f5a-a71e-9b33c225ec85"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{"1.7166607268236154`", "\[VeryThinSpace]", "-", 
+       RowBox[{"0.9250716926226392`", " ", "x"}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {
+     1.7166607268236154`, -0.9250716926226392}, {{$CellContext`x}, {
+      1, $CellContext`x}}, {0, 0}}, {{1., 1., 1.}}, {{0.299, 1.45}, {0.5, 
+    1.234}, {0.696, 1.083}}, {{1., 0.299}, {1., 0.5}, {1., 0.696}}, 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output",
+ CellChangeTimes->{
+  3.498553019735711*^9, 3.4985531473292713`*^9, 3.49855362564036*^9, 
+   3.5281912585655947`*^9, 3.528191754495555*^9, 3.528191924444056*^9, 
+   3.528192347257972*^9, 3.528192416770191*^9, 3.528192503181123*^9, 
+   3.528192542516197*^9, 3.528192620780167*^9, 3.5281926804465437`*^9, {
+   3.528192890553093*^9, 3.528192908023637*^9}, 3.874413869122184*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"49c62049-d1f8-4df0-8b66-441fe4ea314c"],
+
+Cell[BoxData[
+ RowBox[{"2.024174150002097`", "\[VeryThinSpace]", "-", 
+  RowBox[{"2.0104389384983055`", " ", "x"}]}]], "Output",
+ CellChangeTimes->{
+  3.498553019735711*^9, 3.4985531473292713`*^9, 3.49855362564036*^9, 
+   3.5281912585655947`*^9, 3.528191754495555*^9, 3.528191924444056*^9, 
+   3.528192347257972*^9, 3.528192416770191*^9, 3.528192503181123*^9, 
+   3.528192542516197*^9, 3.528192620780167*^9, 3.5281926804465437`*^9, {
+   3.528192890553093*^9, 3.528192908023637*^9}, 3.874413869126608*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"820702a3-8c8f-4aec-872e-dd75f4d6b990"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Data Collection: Determining Electron Density at a Specific Value\
+\>", "Section",
+ CellChangeTimes->{{3.498552465682485*^9, 3.498552491008203*^9}, {
+  3.498553476515629*^9, 
+  3.498553491881399*^9}},ExpressionUUID->"e9517e62-9076-40ae-8b48-\
+4c0ac81202cf"],
+
+Cell[BoxData[
+ RowBox[{"specificdensitydata", " ", "=", " ", 
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"\"\<Compound\>\"", 
+      "\"\<\!\(\*SuperscriptBox[\(e\), \(-\)]\) \ndensity \n\
+(\!\(\*SuperscriptBox[\(e\), \(-\)]\)/\!\(\*SuperscriptBox[\(bohr\), \
+\(3\)]\))\>\"", "\"\<Amount seen\n(qualitative\ndescription\>\""},
+     {"\"\<C-C\>\"", "0.3", "None"},
+     {"\"\<C=C\>\"", "0.3", "More"},
+     {"\"\<C\[Congruent]C\>\"", "0.3", 
+      RowBox[{"A", " ", "lot"}]},
+     {"\"\<C-N\>\"", "0.4", "None"},
+     {"\"\<C=N\>\"", "0.4", 
+      RowBox[{"A", " ", "little"}]},
+     {"\"\<C\[Congruent]N\>\"", "0.4", 
+      RowBox[{"A", " ", "lot", " "}]},
+     {"\"\<N-N\>\"", "0.5", "None"},
+     {"\"\<N=N\>\"", "0.5", 
+      RowBox[{"A", " ", "little"}]},
+     {"\"\<N\[Congruent]N\>\"", "0.5", 
+      RowBox[{"A", " ", "lot", " "}]}
+    },
+    GridBoxDividers->{
+     "Columns" -> {{True}}, "ColumnsIndexed" -> {}, "Rows" -> {{True}}, 
+      "RowsIndexed" -> {}}], "\[NoBreak]", ")"}]}]], "Text",
+ CellChangeTimes->{{3.498552493767639*^9, 3.498552595888414*^9}, 
+   3.498552627893425*^9, {3.498552811959071*^9, 3.498552886138474*^9}, {
+   3.498552964133884*^9, 3.4985529660131702`*^9}, {3.4985531211243563`*^9, 
+   3.498553141708377*^9}, {3.498553500775754*^9, 3.498553596079212*^9}, {
+   3.528192374496663*^9, 3.528192374800128*^9}, {3.528192904441359*^9, 
+   3.528192904832292*^9}, {3.8744140240866003`*^9, 3.8744140520527763`*^9}, {
+   3.874414112805584*^9, 3.8744142374246993`*^9}, {3.874414291752821*^9, 
+   3.8744143014179907`*^9}, {3.8744143555237565`*^9, 
+   3.87441449800453*^9}},ExpressionUUID->"802743ec-fe82-47d7-87ac-\
+24f9a3b8dd13"],
+
+Cell["Question:  what do you think these results mean?  ", "Text",
+ CellChangeTimes->{{3.4985536420034037`*^9, 
+  3.4985536553206177`*^9}},ExpressionUUID->"9605a821-3f92-4d25-b0b7-\
+015067f82caf"],
+
+Cell["\<\
+These results show that electron density increases as the number of bonds \
+between two atoms increases. This is because the distance between the two \
+atoms decreases, and the quantity of electrons in the space increases (\
+\[OpenCurlyDoubleQuote]bonds\[CloseCurlyDoubleQuote] are really just pair of \
+electrons, so increasing the number of bonds increases the number of \
+electrons).  According to the graph, this can be approximated as a linear \
+relationship. This could also be observed qualitatively as the electron \
+clouds grew larger at the same electron densities as the number of bonds \
+grew. \
+\>", "Text",
+ CellChangeTimes->{{3.8744145258188457`*^9, 3.874414537652852*^9}, {
+  3.8744146516992826`*^9, 3.874414792282106*^9}, {3.8744337059435945`*^9, 
+  3.874433722681571*^9}},ExpressionUUID->"8e9e24b9-b5f7-4197-b252-\
+42cbb045805a"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1070.25, 642.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"2c405ea9-b2e7-49b5-9bcb-d433132bc6ac"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 234, 3, 33, "Subtitle",ExpressionUUID->"b59d1ae4-6807-45f6-aeac-5783f3188245"],
+Cell[804, 27, 215, 4, 31, "Subsubtitle",ExpressionUUID->"11cfde07-3eff-415d-a92e-cc663ae82d44"],
+Cell[CellGroupData[{
+Cell[1044, 35, 203, 3, 69, "Section",ExpressionUUID->"831e9df3-abd3-426f-92e7-b235b9c86616"],
+Cell[1250, 40, 3199, 62, 431, "Input",ExpressionUUID->"7ab582ed-3ea3-46af-bca0-c9d2610eb017"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4486, 107, 250, 4, 69, "Section",ExpressionUUID->"f31132dd-9519-43cd-b2d8-55d94623118f"],
+Cell[CellGroupData[{
+Cell[4761, 115, 256, 6, 28, "Item",ExpressionUUID->"0f169297-e778-492c-99c1-8d51cf31c783"],
+Cell[5020, 123, 788, 18, 78, "Input",ExpressionUUID->"22b975f7-cd0a-4aaa-8d66-b4992e7a4400"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5845, 146, 355, 7, 49, "Item",ExpressionUUID->"4a409877-77c6-4899-bd4d-1a6fb412b4bf"],
+Cell[6203, 155, 999, 25, 78, "Input",ExpressionUUID->"517adbc6-24cb-4b83-b7d1-292a3aa8c600"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7239, 185, 314, 7, 28, "Item",ExpressionUUID->"588b3788-3e14-47f1-ad11-84eb8a2f2516"],
+Cell[7556, 194, 838, 22, 78, "Input",ExpressionUUID->"eab32a20-8eb6-4e73-bd6c-57ed434c2989"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8431, 221, 269, 6, 28, "Item",ExpressionUUID->"5be4c144-b9b3-413c-b90a-6cd9ab25f6f3"],
+Cell[CellGroupData[{
+Cell[8725, 231, 1878, 45, 150, "Input",ExpressionUUID->"60de723b-b390-4c87-bac2-77bdc9b8250f"],
+Cell[10606, 278, 1925, 50, 146, "Output",ExpressionUUID->"c1d059b5-47ed-4050-8444-f4e9cb4f31b9"],
+Cell[12534, 330, 1931, 50, 146, "Output",ExpressionUUID->"c6005ea8-dc03-4963-8e56-8c85302f61e8"],
+Cell[14468, 382, 1920, 50, 146, "Output",ExpressionUUID->"f1d8a00b-c6ab-45bf-af45-b34894397352"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16437, 438, 418, 8, 49, "Item",ExpressionUUID->"253b59c4-922a-4983-bb2a-01e6df7ffc6f"],
+Cell[CellGroupData[{
+Cell[16880, 450, 907, 19, 135, "Input",ExpressionUUID->"6360b4c5-4e60-4832-85c9-131cb03fe6f5"],
+Cell[17790, 471, 1172, 28, 53, "Output",ExpressionUUID->"fe01a717-c0b9-4013-9bf7-d08fa45466e3"],
+Cell[18965, 501, 583, 9, 39, "Output",ExpressionUUID->"50c0ad17-04f1-44c7-beb8-79d892d7640f"],
+Cell[19551, 512, 1174, 28, 53, "Output",ExpressionUUID->"13300985-5039-412f-8763-b00a75796fcf"],
+Cell[20728, 542, 583, 9, 39, "Output",ExpressionUUID->"0033c8ce-044c-4f5a-a71e-9b33c225ec85"],
+Cell[21314, 553, 1169, 28, 53, "Output",ExpressionUUID->"49c62049-d1f8-4df0-8b66-441fe4ea314c"],
+Cell[22486, 583, 583, 9, 39, "Output",ExpressionUUID->"820702a3-8c8f-4aec-872e-dd75f4d6b990"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23130, 599, 267, 6, 69, "Section",ExpressionUUID->"e9517e62-9076-40ae-8b48-4c0ac81202cf"],
+Cell[23400, 607, 1652, 34, 284, "Text",ExpressionUUID->"802743ec-fe82-47d7-87ac-24f9a3b8dd13"],
+Cell[25055, 643, 196, 3, 34, "Text",ExpressionUUID->"9605a821-3f92-4d25-b0b7-015067f82caf"],
+Cell[25254, 648, 857, 14, 103, "Text",ExpressionUUID->"8e9e24b9-b5f7-4197-b252-42cbb045805a"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

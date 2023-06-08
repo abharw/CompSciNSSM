@@ -1,0 +1,6 @@
+[1] "BIC Temp -> Ozone: 1075.967108"
+[1] "BIC Solar.R -> Ozone: 1091.842988"
+[1] 1737.428
+[1] "BIC Ozone -> Solar.R: 1315.551563"
+[1] "BIC Solar.R -> Temp -> Ozone: 2141.483423"
+[1] "BIC Ozone <- Solar.R -> Temp -> Ozone: 3233.326411"
